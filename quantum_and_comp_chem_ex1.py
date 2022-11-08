@@ -36,8 +36,8 @@ plt.plot(r,R30,label = 'R30')
 plt.plot(r,R31,label = 'R31')
 plt.plot(r,R32,label = 'R32')
 plt.plot(x,zero)
-#plt.legend()
-#plt.show()
+plt.legend()
+plt.show()
 
 a = np.arange(-15,15,0.2)
 X, Y, Z = np.meshgrid(a,a,a)
@@ -92,7 +92,8 @@ x = r*np.sin(th)*np.cos(ph)
 z = r*np.cos(th)
 fig = go.Figure(data = [go.Scatter(x= x, y = z, mode = 'lines')])
 fig.show()
-'''plot_psi_z2 = go.Figure(data = go.Isosurface(
+
+plot_psi_z2 = go.Figure(data = go.Isosurface(
     x = X.flatten(), y = Y.flatten(), z = Z.flatten(),
     value = psi_z2.flatten(),
     isomin = -0.68,
@@ -154,7 +155,7 @@ plot_psi_xy = go.Figure(data = go.Isosurface(
     caps=dict(x_show=False, y_show=False, z_show = False)
     ))
 plot_psi_xy.show()
-'''
+
 
 
 
