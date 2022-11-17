@@ -41,7 +41,7 @@ plt.ylabel('R(p)')
 plt.legend()
 plt.show()
 
-a = np.arange(-15,15,0.2)
+a = np.arange(-15,15,0.5)
 X, Y, Z = np.meshgrid(a,a,a)
 X_zoom, Y_zoom, Z_zoom = np.mgrid[-15:15:100j,-15:15:100j,-15:15:100j]
 
